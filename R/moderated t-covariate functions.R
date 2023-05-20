@@ -127,6 +127,8 @@ create.siotani.covariates <- function(t_main, covariates_kshirsagar, df){
 #' \item{mod.t.stat}{numeric of moderated t-statistics.}
 #' \item{mod.t.cov}{numeric of moderated t-covariates.}
 #' \item{df}{numeric of degrees of freedoms for the null component.}
+#' \item{Y} from the from the arguments.
+#' \item{X} from the arguments.
 #' @export
 #'
 #' @examples create.t.stat.cov.df(exampleY, exampleX, c(1,-1,0,0,0))
@@ -173,7 +175,9 @@ create.t.stat.cov.df <- function(Y,X,cont,
 
   output.list <- list(mod.t.stat = stats.mat[,1],
                       mod.t.cov = cbind(covariates_siotani),
-                      df = df)
+                      df = df,
+                      Y = Y,
+                      X = X)
   return(output.list)
 }
 

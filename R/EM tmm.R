@@ -277,7 +277,7 @@ fit.t.model <- function(mod.t.cov.df,
   # Number of genes
   m <- nrow(mod.t.cov)
   # Number of treatments
-  p <- ncol(X)
+  p <- ncol(mod.t.cov.df$X)
   # Temporary number of t-mixture components
   Rtemp <- p*3
   # Guess the null proportion

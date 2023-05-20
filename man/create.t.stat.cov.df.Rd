@@ -22,6 +22,8 @@ A list with the elements
 \item{mod.t.stat}{numeric of moderated t-statistics.}
 \item{mod.t.cov}{numeric of moderated t-covariates.}
 \item{df}{numeric of degrees of freedoms for the null component.}
+\item{Y} from the from the arguments.
+\item{X} from the arguments.
 }
 \description{
 Create moderated t-statistics and covariates

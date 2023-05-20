@@ -11,7 +11,7 @@
 #'
 #' @examples mod.t.cov.df <- create.t.stat.cov.df(exampleY, exampleX, c(1,-1,0,0,0))
 #' @examples fit <- fit.t.model(mod.t.cov.df)
-#' @examples mlfdr <- mlfdr_fn_tmm(mod.t.stat = mod.t.cov.df$mod.t.stat, prob_mat = fit$prob_mat, param = fit$param, df = mod.t.cov.df$df_vec, alt.df = mod.t.cov.df$df_vec)
+#' @examples mlfdr <- mlfdr_fn_tmm(mod.t.stat = mod.t.cov.df$mod.t.stat, prob_mat = fit$prob_mat, param = fit$param, df = mod.t.cov.df$df, alt.df = mod.t.cov.df$df)
 mlfdr_fn_tmm <- function(mod.t.stat, prob_mat,
                          param, df, alt.df){
 
